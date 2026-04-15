@@ -1,0 +1,36 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "123456",
+        "name": [
+          {
+            "family": "Khan",
+            "given": ["Saif"]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1998-01-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "text": "Glucose"
+        },
+        "valueQuantity": {
+          "value": 140,
+          "unit": "mg/dL"
+        },
+        "subject": {
+          "reference": "Patient/123456"
+        }
+      }
+    }
+  ]
+}
